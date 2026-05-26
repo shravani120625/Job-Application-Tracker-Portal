@@ -1,0 +1,17 @@
+{
+  "name": "job-application-tracker-portal",
+  "version": "1.0.0",
+  "description": "Root orchestrator for Job Application Tracker Portal",
+  "scripts": {
+    "install-all": "npm install --prefix server && npm install --prefix client --legacy-peer-deps",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "overrides": {
+    "react-is": "^19.0.0"
+  }
+}
